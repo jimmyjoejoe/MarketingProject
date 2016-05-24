@@ -2,11 +2,22 @@
 using System.Collections;
 
 public class HitbrickScript : MonoBehaviour {
-	public bool hitbrick;
-	
-	void OnCollision2DEnter (Collision2D other) {
+	public bool Brick;
+	public GameObject[] ball;
+	public GameObject Brickgame;
+	private Animator Brickanim;
 
-		hitbrick = true;
+	void Start () {
+
+		Brickanim = GetComponent <Animator> ();
+		ball = GameObject.FindGameObjectsWithTag("Ball");
+	}
+	
+	IEnumerator OnTriggerEnter2D (Collider2D other) {
+		Brick = true;
+		Brickanim.SetBool ("Brick",true);
+		yield return new WaitForSeconds(1);
+		Destroy (Brickgame);
 
 	}
 }

@@ -3,11 +3,10 @@ using System.Collections;
 
 public class Bricks : MonoBehaviour {
 
-	public GameObject game;
+	public GameObject Brick;
 	
-	void OnCollision2DEnter (Collision2D other)
+	void OnTriggerEnter2D (Collider2D other)
 	{
-		GM.instance.DestroyBrick();
-		Destroy(game);
+		Destroy(Brick);
 	}
 }
