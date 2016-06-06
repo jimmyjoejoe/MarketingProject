@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\Bricks.cs" />
      <Compile Include="Assets\Scripts\GM.cs" />
      <Compile Include="Assets\Scripts\HitbrickScript.cs" />
+     <Compile Include="Assets\Scripts\NewHitBrick.cs" />
      <Compile Include="Assets\Scripts\PaddleController.cs" />
      <Compile Include="Assets\Scripts\TimedDestroy.cs" />
  <Reference Include="UnityEngine.UI">
