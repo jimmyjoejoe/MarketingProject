@@ -49,7 +49,7 @@ public class NewHitBrick : MonoBehaviour {
 
 		else if (other.gameObject.tag == "Red") {
 			BrickAnim = other.gameObject.GetComponent <Animator> ();
-			BrickAnim.SetBool ("Brick",true);
+			BrickAnim.SetBool ("Brick",false);
 			Destroy (other.gameObject);		
 			numberOfBricks--;
 		}
