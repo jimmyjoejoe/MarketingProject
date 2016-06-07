@@ -4,12 +4,12 @@ using System.Collections;
 public class NewHitBrick : MonoBehaviour {
 
 	private Animator BrickAnim;
-	public GameObject Red;
-	public GameObject Orange;
-	public GameObject Yellow;
-	public GameObject Green;
-	public GameObject Blue;
-	public GameObject Purple;
+	public Sprite Red;
+	public Sprite Orange;
+	public Sprite Yellow;
+	public Sprite Green;
+	public Sprite Blue;
+	public Sprite Purple;
 
 
 	// Use this for initialization
@@ -19,11 +19,31 @@ public class NewHitBrick : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "Purple") {
-			Destroy (other.gameObject);
-			Instantiate (Blue,transform.position,transform.rotation);
-					}
+			other.gameObject.GetComponent <SpriteRenderer>().sprite = Blue;
+			other.gameObject.tag = "Blue";
+		}
 
-		if (other.gameObject.tag == "Red") {
+		else if (other.gameObject.tag == "Blue") {
+			other.gameObject.GetComponent <SpriteRenderer>().sprite = Green;
+			other.gameObject.tag = "Green";
+		}
+
+		else if (other.gameObject.tag == "Green") {
+			other.gameObject.GetComponent <SpriteRenderer>().sprite = Yellow;
+			other.gameObject.tag = "Yellow";
+		}
+
+		else if (other.gameObject.tag == "Yellow") {
+			other.gameObject.GetComponent <SpriteRenderer>().sprite = Orange;
+			other.gameObject.tag = "Orange";
+		}
+
+		else if (other.gameObject.tag == "Orange") {
+			other.gameObject.GetComponent <SpriteRenderer>().sprite = Red;
+			other.gameObject.tag = "Red";
+		}
+
+		else if (other.gameObject.tag == "Red") {
 			BrickAnim = other.gameObject.GetComponent <Animator> ();
 			BrickAnim.SetBool ("Brick",true);
 			Destroy (other.gameObject);		
