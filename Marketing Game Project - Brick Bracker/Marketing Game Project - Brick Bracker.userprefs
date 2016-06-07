@@ -1,4 +1,11 @@
 ﻿<Properties>
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\neilj9530\Documents\GitHub\MarketingProject\Marketing Game Project - Brick Bracker\Assets\Scripts\ConstantSpeed.cs">
+    <Files>
+      <File FileName="c:\Users\neilj9530\Documents\GitHub\MarketingProject\Marketing Game Project - Brick Bracker\Assets\Scripts\ConstantSpeed.cs" Line="16" Column="66" />
+      <File FileName="Assets\Scripts\ConstantSpeed2.js" Line="11" Column="14" />
+=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 <<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NewHitBrick.cs">
@@ -13,6 +20,10 @@
       <File FileName="Assets\Scripts\PaddleController.cs" Line="14" Column="47" />
       <File FileName="Assets\Scripts\Respawn.cs" Line="13" Column="2" />
       <File FileName="Assets\Scripts\Ballout.cs" Line="18" Column="29" />
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> origin/master
 >>>>>>> refs/remotes/origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>

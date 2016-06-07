@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{0C0A99FA-FB3D-24B1-E5C0-C4A73FD30EB9}</ProjectGuid>
+	<ProjectGuid>{1461CD79-384A-8A75-38A4-DF5BFE209695}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,16 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Ball.cs" />
-     <Compile Include="Assets\Scripts\Ballout.cs" />
-     <Compile Include="Assets\Scripts\Bricks.cs" />
-     <Compile Include="Assets\Scripts\ConstantSpeed.cs" />
-     <Compile Include="Assets\Scripts\GM.cs" />
-     <Compile Include="Assets\Scripts\HitbrickScript.cs" />
-     <Compile Include="Assets\Scripts\NewHitBrick.cs" />
-     <Compile Include="Assets\Scripts\PaddleController.cs" />
-     <Compile Include="Assets\Scripts\Respawn.cs" />
-     <Compile Include="Assets\Scripts\TimedDestroy.cs" />
+     <Compile Include="Assets\Scripts\ConstantSpeed2.js" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
