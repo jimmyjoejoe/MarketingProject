@@ -1,10 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NewHitBrick.cs">
     <Files>
       <File FileName="Assets\Scripts\PaddleController.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\HitbrickScript.cs" Line="19" Column="1" />
       <File FileName="Assets\Scripts\NewHitBrick.cs" Line="24" Column="4" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Respawn.cs">
+    <Files>
+      <File FileName="Assets\Scripts\HitbrickScript.cs" Line="20" Column="23" />
+      <File FileName="Assets\Scripts\PaddleController.cs" Line="14" Column="47" />
+      <File FileName="Assets\Scripts\Respawn.cs" Line="13" Column="2" />
+      <File FileName="Assets\Scripts\Ballout.cs" Line="18" Column="29" />
+>>>>>>> refs/remotes/origin/master
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
