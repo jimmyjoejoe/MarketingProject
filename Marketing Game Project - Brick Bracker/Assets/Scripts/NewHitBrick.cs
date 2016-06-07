@@ -11,6 +11,9 @@ public class NewHitBrick : MonoBehaviour {
 	public Sprite Blue;
 	public Sprite Purple;
 
+	public int numberOfBricks;
+	public GameObject endingScreen;
+
 
 	// Use this for initialization
 	void Start () {
@@ -47,7 +50,16 @@ public class NewHitBrick : MonoBehaviour {
 			BrickAnim = other.gameObject.GetComponent <Animator> ();
 			BrickAnim.SetBool ("Brick",true);
 			Destroy (other.gameObject);		
+			numberOfBricks--;
 		}
 
+		//check to see if level is over
+		if (numberOfBricks == 0) {
+			endingScreen.SetActive(true);
+		}
+	}
+
+	public void NextLevel(){
+		//Application.LoadLevel();
 	}
 }
