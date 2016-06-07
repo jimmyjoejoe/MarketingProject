@@ -13,6 +13,7 @@ public class NewHitBrick : MonoBehaviour {
 
 	public int numberOfBricks;
 	public GameObject endingScreen;
+	public GameObject lastLevelEndingScreen;
 
 
 	// Use this for initialization
@@ -54,12 +55,17 @@ public class NewHitBrick : MonoBehaviour {
 		}
 
 		//check to see if level is over
-		if (numberOfBricks == 0) {
-			endingScreen.SetActive(true);
+		if (numberOfBricks == 0 && Application.loadedLevel != 2) {
+			endingScreen.SetActive (true);
+		} 
+		else{
+			lastLevelEndingScreen.SetActive(true);		
 		}
 	}
 
 	public void NextLevel(){
-		//Application.LoadLevel();
+		int levelNum = 1;
+		Application.LoadLevel(levelNum);
+		levelNum++;
 	}
 }

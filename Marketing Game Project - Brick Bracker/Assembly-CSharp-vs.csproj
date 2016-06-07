@@ -52,7 +52,6 @@
      <Compile Include="Assets\Scripts\ConstantSpeed.cs" />
      <Compile Include="Assets\Scripts\GM.cs" />
      <Compile Include="Assets\Scripts\HitbrickScript.cs" />
-     <Compile Include="Assets\Scripts\NewGameManager.cs" />
      <Compile Include="Assets\Scripts\NewHitBrick.cs" />
      <Compile Include="Assets\Scripts\PaddleController.cs" />
      <Compile Include="Assets\Scripts\Respawn.cs" />
