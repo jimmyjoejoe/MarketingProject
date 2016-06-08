@@ -1,23 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Respawn : MonoBehaviour {
+public class Respawn : MonoBehaviour
+{
+	public GameObject prefab;
+
 	
-	public GameObject Player;
-	public Transform spawnPoint;
-	
-	void Start () {
-		
+	void OnTriggerEnter2D (Collider2D other){
+
+		Destroy (prefab);
+
+			Instantiate(prefab, new Vector2(0,-49), Quaternion.identity);
 	}
-	
-	
-	void Update () {
-		
-	}
-	
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		
-		other.transform.position = spawnPoint.transform.position; 
-	}
-}﻿
+}
