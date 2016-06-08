@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class NewHitBrick : MonoBehaviour {
@@ -58,14 +58,16 @@ public class NewHitBrick : MonoBehaviour {
 		if (numberOfBricks == 0 && Application.loadedLevel != 2) {
 			endingScreen.SetActive (true);
 		} 
-		else{
+		else if(Application.loadedLevel == 2){ 
 			lastLevelEndingScreen.SetActive(true);		
 		}
 	}
 
-	public void NextLevel(){
-		int levelNum = 1;
-		Application.LoadLevel(levelNum);
-		levelNum++;
+	public void loadLevelTwo(){
+		Application.LoadLevel(1);
+	}
+
+	public void loadLevelThree(){
+		Application.LoadLevel (2);
 	}
 }

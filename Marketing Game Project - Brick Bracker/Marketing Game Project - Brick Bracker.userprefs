@@ -1,13 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\HitbrickScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NewHitBrick.cs">
     <Files>
-<<<<<<< HEAD
-      <File FileName="Assets\Scripts\NewGameManager.cs" Line="18" Column="3" />
-      <File FileName="Assets\Scripts\NewHitBrick.cs" Line="62" Column="26" />
-=======
-      <File FileName="Assets\Scripts\HitbrickScript.cs" Line="24" Column="1" />
->>>>>>> origin/master
+      <File FileName="Assets\Scripts\NewHitBrick.cs" Line="71" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
