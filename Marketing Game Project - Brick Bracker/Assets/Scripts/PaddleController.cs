@@ -10,7 +10,7 @@ public class PaddleController : MonoBehaviour {
 	
 	void Update () 
 	{
-		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
+		float xPos = transform.position.x + (Input.acceleration.x * paddleSpeed);
 		playerPos = new Vector3 (Mathf.Clamp (xPos, -145f, 145f), -58f, 0f);
 		transform.position = playerPos;
 		
