@@ -15,7 +15,6 @@ public class NewHitBrick : MonoBehaviour {
 	public GameObject endingScreen;
 	public GameObject lastLevelEndingScreen;
 
-
 	// Use this for initialization
 	void Start () {
 	}
@@ -58,7 +57,7 @@ public class NewHitBrick : MonoBehaviour {
 		if (numberOfBricks == 0 && Application.loadedLevel != 2) {
 			endingScreen.SetActive (true);
 		} 
-		else if(Application.loadedLevel == 2){ 
+		else if(numberOfBricks == 0 && Application.loadedLevel == 2){ 
 			lastLevelEndingScreen.SetActive(true);		
 		}
 	}
